@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PrimaryCollectionViewCell" id="gTV-IL-0wX" customClass="PrimaryCollectionViewCell" customModule="iOS_Dummy_Video_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="298"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="298"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-UM-uUc">
+                        <rect key="frame" x="0.0" y="0.0" width="272" height="298"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DUU-6k-fn5">
+                                <rect key="frame" x="0.0" y="0.0" width="272" height="298"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DUU-6k-fn5" firstAttribute="top" secondItem="ckb-UM-uUc" secondAttribute="top" id="AKk-Ac-msL"/>
+                            <constraint firstItem="DUU-6k-fn5" firstAttribute="leading" secondItem="ckb-UM-uUc" secondAttribute="leading" id="fbv-Vf-och"/>
+                            <constraint firstAttribute="bottom" secondItem="DUU-6k-fn5" secondAttribute="bottom" id="nIv-dn-FYN"/>
+                            <constraint firstAttribute="trailing" secondItem="DUU-6k-fn5" secondAttribute="trailing" id="wNw-Pk-JGb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ckb-UM-uUc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6fM-V5-FNg"/>
+                <constraint firstAttribute="bottom" secondItem="ckb-UM-uUc" secondAttribute="bottom" id="BQC-C3-E1b"/>
+                <constraint firstAttribute="trailing" secondItem="ckb-UM-uUc" secondAttribute="trailing" id="LWE-ED-0nw"/>
+                <constraint firstItem="ckb-UM-uUc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rGw-SS-gcu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="272" height="298"/>
+            <connections>
+                <outlet property="imageView" destination="DUU-6k-fn5" id="zy8-GT-k2y"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="98.950524737631198"/>
+        </collectionViewCell>
+    </objects>
+</document>
